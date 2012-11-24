@@ -2880,6 +2880,7 @@ public final class Settings {
 
          /**
          * Navigation bar State
+         * Statusbar State
          * @hide
          */
         public static final String EXPANDED_DESKTOP_STATE = "expanded_desktop_state";
@@ -2940,6 +2941,8 @@ public final class Settings {
          */
         public static final String PIE_GRAVITY = "pie_gravity";
 
+=======
+>>>>>>> 715c34a... Framework: Forward port Expanded desktop capability
         /**
          * Whether to use a separate delay for "slide to unlock" and security
          * lock
@@ -3276,12 +3279,22 @@ public final class Settings {
         public static final String LOCKSCREEN_MAXIMIZE_WIDGETS = "lockscreen_maximize_widgets";
 
         /**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 715c34a... Framework: Forward port Expanded desktop capability
          * Whether power menu expanded desktop is enabled
          * @hide
          */
         public static final String POWER_MENU_EXPANDED_DESKTOP_ENABLED = "power_menu_expanded_desktop_enabled";
 
         /**
+<<<<<<< HEAD
+=======
+         * Whether to unlock the screen with the home key.  The value is boolean (1 or 0).
+>>>>>>> 47523cc... Framework: Forward port Expanded desktop capability
+>>>>>>> 715c34a... Framework: Forward port Expanded desktop capability
          * @hide
          */
         public static final String[] NAVIGATION_CUSTOM_ACTIVITIES = new String[] {
