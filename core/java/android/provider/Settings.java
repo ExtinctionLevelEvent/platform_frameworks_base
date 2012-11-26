@@ -3007,6 +3007,18 @@ public final class Settings {
         public static final String POWER_MENU_AIRPLANE_ENABLED = "power_menu_airplane_enabled";
 
         /**
+         * Whether to enable lockscreen rotation
+         * @hide
+         */
+        public static final String LOCKSCREEN_AUTO_ROTATE = "lockscreen_auto_rotate";
+
+        /**
+         * custom lockscreen text color
+         * @hide
+         */
+        public static final String LOCKSCREEN_CUSTOM_TEXT_COLOR = "lockscreen_custom_text_color";
+
+        /**
          * Whether power menu user switcher is enabled
          * @hide
          */
