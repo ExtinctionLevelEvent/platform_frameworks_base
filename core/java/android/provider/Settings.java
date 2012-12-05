@@ -2977,6 +2977,12 @@ public final class Settings {
         public static final String POWER_MENU_REBOOT_ENABLED = "power_menu_reboot_enabled";
 
         /**
+         * Setting to allow Unlimited Widgets
+         * @hide
+         */
+        public static final String LOCKSCREEN_UNLIMITED_WIDGETS = "lockscreen_unlimited_widgets";
+
+        /**
          * Whether power menu screenshot is enabled
          * @hide
          */
