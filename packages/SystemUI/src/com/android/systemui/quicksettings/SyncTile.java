@@ -21,13 +21,11 @@ public class SyncTile extends QuickSettingsTile {
             QuickSettingsController qsc) {
         super(context, inflater, container, qsc);
 
-        updateTileState();
-
         mOnClick = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 toggleState();
-                applySyncChanges();
+                updateResources();
             }
         };
 
@@ -45,6 +43,28 @@ public class SyncTile extends QuickSettingsTile {
     }
 
     @Override
+    void onPostCreate() {
+        updateTile();
+        super.onPostCreate();
+    }
+
+    @Override
+    public void updateResources() {
+        updateTile();
+        super.updateResources();
+    }
+
+    private synchronized void updateTile() {
+        if (getSyncState()) {
+            mDrawable = R.drawable.ic_qs_sync_on;
+            mLabel = mContext.getString(R.string.quick_settings_sync);
+        } else {
+            mDrawable = R.drawable.ic_qs_sync_off;
+            mLabel = mContext.getString(R.string.quick_settings_sync_off);
+        }
+    }
+
+    @Override
     public void setupQuickSettingsTile() {
         super.setupQuickSettingsTile();
 
@@ -57,11 +77,6 @@ public class SyncTile extends QuickSettingsTile {
             mSyncObserverHandle = ContentResolver.addStatusChangeListener(
                     ContentResolver.SYNC_OBSERVER_TYPE_SETTINGS, mSyncObserver);
         }
-    }
-
-    private void applySyncChanges() {
-        updateTileState();
-        updateQuickSettings();
     }
 
     protected void toggleState() {
@@ -95,7 +110,7 @@ public class SyncTile extends QuickSettingsTile {
             mHandler.post(new Runnable() {
                 @Override
                 public void run() {
-                    applySyncChanges();
+                    updateResources();
                 }
             });
         }
