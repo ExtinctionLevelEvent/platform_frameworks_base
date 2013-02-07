@@ -27,7 +27,7 @@
     <color name="notification_list_shadow_top">#80000000</color>
     <drawable name="recents_callout_line">#99ffffff</drawable>
     <drawable name="notification_item_background_legacy_color">#ffaaaaaa</drawable>
-    <drawable name="intruder_bg_pressed">#ff33B5E5</drawable>
+    <drawable name="intruder_bg_pressed">#ffffD000</drawable>
     <drawable name="notification_header_bg">#FF000000</drawable>
     <drawable name="nav_bar_bg">#ff000000</drawable>
 
@@ -36,6 +36,8 @@
     <!-- the darkening filter applied to notifications -->
     <drawable name="notification_icon_area_smoke">#aa000000</drawable>
     <color name="notification_panel_scrim_color">#B0000000</color>
+<<<<<<< HEAD
+=======
     <color name="qs_tile_user_label">#CC000000</color>
 
     <!-- Quick Nav Panel -->
@@ -62,4 +64,5 @@
     <color name="status">#ffffff</color>
 
     <!-- THEMEABLE PIE PIE PIE PIE PIE? -->
+>>>>>>> 704af22... PIE: this is an all inclusive commit for pie. Includes everything needed for pie'
 </resources>
