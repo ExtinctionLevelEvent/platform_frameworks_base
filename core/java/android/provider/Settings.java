@@ -2945,6 +2945,19 @@ public final class Settings {
          * Whether to use a separate delay for "slide to unlock" and security
          * lock
          * NFC polling mode configuration key
+         * Whether to enable lockscreen rotation
+         * @hide
+         */
+        public static final String LOCKSCREEN_AUTO_ROTATE = "lockscreen_auto_rotate";
+
+        /**
+         * custom lockscreen text color
+         * @hide
+         */
+        public static final String LOCKSCREEN_CUSTOM_TEXT_COLOR = "lockscreen_custom_text_color";
+
+        /**
+         * Boolean value whether to link ringtone and notification volumes
          *
          * @hide
          */
