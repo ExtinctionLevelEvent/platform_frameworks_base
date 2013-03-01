@@ -135,6 +135,7 @@ public class PieMenu extends FrameLayout {
     private PieStatusPanel mStatusPanel;
 
     private int mOverallSpeed = BASE_SPEED;
+    private int mInitialSpeed;
     private int mPanelDegree;
     private int mPanelOrientation;
     private int mInnerPieRadius;
