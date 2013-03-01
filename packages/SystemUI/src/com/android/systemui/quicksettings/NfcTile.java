@@ -74,21 +74,19 @@ public class NfcTile extends QuickSettingsTile {
         }
     }
 
-    private void setTileState(int state) {
-        // Get the initial label
-        mLabel = mContext.getString(R.string.quick_settings_nfc);
-
     private synchronized void updateTile(int state) {
+
         switch (state) {
         case NfcAdapter.STATE_TURNING_ON:
         case NfcAdapter.STATE_ON:
             mDrawable = R.drawable.ic_qs_nfc_on;
+            mLabel = mContext.getString(R.string.quick_settings_nfc);
             break;
         case NfcAdapter.STATE_TURNING_OFF:
         case NfcAdapter.STATE_OFF:
         default:
             mDrawable = R.drawable.ic_qs_nfc_off;
-            mLabel += " " + mContext.getString(R.string.quick_settings_label_disabled);
+            mLabel = mContext.getString(R.string.quick_settings_nfc_off);
             break;
         }
     }
