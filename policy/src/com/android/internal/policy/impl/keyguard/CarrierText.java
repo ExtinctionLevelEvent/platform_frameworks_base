@@ -79,9 +79,7 @@ public class CarrierText extends TextView {
             setText(text != null ? text.toString().toUpperCase() : null);
         } else {
             setText(text);
-        }
-        setTextColor(Settings.System.getInt(getContext().getContentResolver(),
-            Settings.System.LOCKSCREEN_CUSTOM_TEXT_COLOR, 0xFFFFFFFF));
+	}
     }
 
     @Override

@@ -2544,6 +2544,12 @@ public final class Settings {
          * @hide
          */
         public static final String LOCKSCREEN_TARGETS = "lockscreen_targets";
+        
+         /**  
+         * Allows lockscreen to be rotated
+         * @hide
+         */
+        public static final String LOCKSCREEN_ALLOW_ROTATION = "lockscreen_allow_rotation";
 
         /**
          * @deprecated Use {@link android.provider.Settings.Global#LOW_BATTERY_SOUND}
@@ -2940,21 +2946,6 @@ public final class Settings {
          * @hide
          */
         public static final String PIE_GRAVITY = "pie_gravity";
-
-        /**
-         * Whether to use a separate delay for "slide to unlock" and security
-         * lock
-         * NFC polling mode configuration key
-         * Whether to enable lockscreen rotation
-         * @hide
-         */
-        public static final String LOCKSCREEN_AUTO_ROTATE = "lockscreen_auto_rotate";
-
-        /**
-         * custom lockscreen text color
-         * @hide
-         */
-        public static final String LOCKSCREEN_CUSTOM_TEXT_COLOR = "lockscreen_custom_text_color";
 
         /**
          * Boolean value whether to link ringtone and notification volumes
@@ -3419,12 +3410,6 @@ public final class Settings {
          * @hide
          */
         public static final String LOCKSCREEN_BATTERY = "lockscreen_battery";
-
-        /**
-         * custom lockscreen text color
-         * @hide
-         */
-        public static final String LOCKSCREEN_CUSTOM_TEXT_COLOR = "lockscreen_custom_text_color";
 
         /**
          * Whether the hints for the left and right widgets are shown when the screen is turned on

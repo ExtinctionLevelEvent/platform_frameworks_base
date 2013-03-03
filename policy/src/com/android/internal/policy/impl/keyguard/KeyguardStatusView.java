@@ -109,7 +109,6 @@ public class KeyguardStatusView extends GridLayout {
         mClockView.updateTime();
         refreshDate();
         refreshAlarmStatus(); // might as well
-        updateColors();
     }
 
     void refreshAlarmStatus() {
@@ -153,17 +152,4 @@ public class KeyguardStatusView extends GridLayout {
         }
     }
 
-    private void updateColors() {
-        ContentResolver resolver = getContext().getContentResolver();
-        int color = Settings.System.getInt(resolver,
-                Settings.System.LOCKSCREEN_CUSTOM_TEXT_COLOR, 0xFFFFFFFF);
-
-        if (mDateView != null) {
-            mDateView.setTextColor(color);
-        }
-
-        if (mAlarmStatusView != null) {
-            mAlarmStatusView.setTextColor(color);
-        }
-    }
 }
